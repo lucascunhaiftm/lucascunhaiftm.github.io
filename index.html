@@ -2,83 +2,97 @@
 <html>
 <head>
 	<title>Página principal!</title>
-	<style type="text/css">
-		table, th, td {
-			border: 1px solid black;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
-	<h1>Meus jogos</h1>
-	<ul>
-		<li><a href="jogo1.html"> PES 2020</a></li>
-		<li><a href="jogo1.html"> PES 2020</a></li>
-		<li><a href="jogo1.html"> PES 2020</a></li>
-	</ul>
-	<table>
-		<head>
-			<th>Nome</th>
-			<th>Data Lançamento</th>
-			<th>Estilo</th>
-			<th>Fabricante</th>
-			<th>Plataformas</th>
-			<th colspan="2">Preço</th>
-		</head>
-		<tbody>
-			<tr>
-				<td rowspan="3">PES 2020</td>
-				<td rowspan="3">10 stembro 2019</td>
-				<td rowspan="3">Esportes</td>
-				<td rowspan="3">PES Production</td>
-				<td>PS4</td>
-				<td rowspan="3">R$ 99,99</td>
-				<td rowspan="3">R$ 179,99</td>
-			</tr>
-			<tr>
-				<td>XBOX ONE</td>
-			</tr>
-			<tr>
-				<td>PC</td>
-			</tr>
-				<tr>
-				<td rowspan="3">PES 2020</td>
-				<td rowspan="3">10 stembro 2019</td>
-				<td rowspan="3">Esportes</td>
-				<td rowspan="3">PES Production</td>
-				<td>PS4</td>
-				<td rowspan="3">R$ 99,99</td>
-				<td rowspan="3">R$ 179,99</td>
-			</tr>
-			<tr>
-				<td>XBOX ONE</td>
-			</tr>
-			<tr>
-				<td>PC</td>
-			</tr>
-				<tr>
-				<td rowspan="3">PES 2020</td>
-				<td rowspan="3">10 stembro 2019</td>
-				<td rowspan="3">Esportes</td>
-				<td rowspan="3">PES Production</td>
-				<td>PS4</td>
-				<td rowspan="3">R$ 99,99</td>
-				<td rowspan="3">R$ 179,99</td>
-			</tr>
-			<tr>
-				<td>XBOX ONE</td>
-			</tr>
-			<tr>
-				<td>PC</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td colspan="7">
-					Valores consultado em XX/XX/XXXX
-				</td>
-			</tr>
-		</tfoot>
-		<caption align="bottom" >Tabela 1: Comparativo Jogos</caption>
-	</table>
+	<header>
+		<h1>Meus jogos</h1>
+	</header>
+	<div class="container">
+		<nav class="menu">
+			<h2>Links para os jogos</h2>
+			<ul id="menu">
+				<li><a href="jogo1.html"> PES 2020</a></li>
+				<li><a href="jogo1.html"> PES 2020</a></li>
+				<li><a href="jogo1.html"> PES 2020</a></li>
+			</ul>
+		</nav>
+		<content>
+			<div class="conteudo">
+				<table>
+					<head>
+						<th>Nome</th>
+						<th>Data Lançamento</th>
+						<th>Estilo</th>
+						<th>Fabricante</th>
+						<th>Plataformas</th>
+						<th colspan="2">Preço</th>
+					</head>
+					<tbody>
+						<tr class="linha_branca">
+							<td rowspan="3">PES 2020</td>
+							<td rowspan="3">10 stembro 2019</td>
+							<td rowspan="3">Esportes</td>
+							<td rowspan="3">PES Production</td>
+							<td>PS4</td>
+							<td rowspan="3">R$ 99,99</td>
+							<td rowspan="3">R$ 179,99</td>
+						</tr>
+						<tr class="linha_branca">
+							<td>XBOX ONE</td>
+						</tr>
+						<tr class="linha_branca">
+							<td>PC</td>
+						</tr>
+						<tr>
+							<td rowspan="3">PES 2020</td>
+							<td rowspan="3">10 stembro 2019</td>
+							<td rowspan="3">Esportes</td>
+							<td rowspan="3">PES Production</td>
+							<td>PS4</td>
+							<td rowspan="3">R$ 99,99</td>
+							<td rowspan="3">R$ 179,99</td>
+						</tr>
+						<tr>
+							<td>XBOX ONE</td>
+						</tr>
+						<tr>
+							<td>PC</td>
+						</tr>
+						<tr class="linha_branca">
+							<td rowspan="3">PES 2020</td>
+							<td rowspan="3">10 stembro 2019</td>
+							<td rowspan="3">Esportes</td>
+							<td rowspan="3">PES Production</td>
+							<td>PS4</td>
+							<td rowspan="3">R$ 99,99</td>
+							<td rowspan="3">R$ 179,99</td>
+						</tr>
+						<tr class="linha_branca">
+							<td>XBOX ONE</td>
+						</tr>
+						<tr class="linha_branca">
+							<td>PC</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="7">
+								Valores consultado em XX/XX/XXXX
+							</td>
+						</tr>
+					</tfoot>
+					<caption align="bottom" >Tabela 1: Comparativo Jogos</caption>
+				</table>
+			</div>
+		</content>
+	</div>
+	<footer>
+		<div>
+			<a class="link_footer" href="jogo1.html"> &raquo; Facebook</a>
+			<a class="link_footer" href="jogo1.html"> &raquo; Twitter</a>
+			<a class="link_footer" href="jogo1.html"> &raquo; Instagram</a>
+		</div>
+	</footer>
 </body>
 </html>
