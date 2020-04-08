@@ -101,8 +101,8 @@ img{
 }
 
 .miniatura_link{
-	height: auto;
-	width: 60px;
+	height: 60px;
+	width: auto;
 }
 
 h2{
