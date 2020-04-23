@@ -91,6 +91,7 @@ img{
 	position: relative;
 	width: 100%;
 	background-color: #9b9e9b;
+	min-height: 400px;
 
 }
 
@@ -101,8 +102,8 @@ img{
 }
 
 .miniatura_link{
-	height: auto;
-	width: 60px;
+	height: 60px;
+	width: auto;
 }
 
 h2{
@@ -113,4 +114,36 @@ h2{
 }
 .linha_branca{
 	background-color: white;
+}
+
+.rotulos{
+	display: inline-block;
+	width: 100px;
+	padding: 5px;
+	margin: 5px 0 5px 0;
+}
+
+#form_fale_conosco > input, textarea{
+	width: 400px;
+}
+
+.botao_enviar{
+	width: 150px;
+	height: 25px;
+	background-color: black;
+	color: white;
+	padding: 0;
+	margin-top: 10px;
+}
+.coluna{
+	width: 50%;
+	float: left;
+}
+
+.coluna > input{
+	width: 45%;
+}
+
+.coluna > input[type="radio"]{
+	width: 0%;
 }
