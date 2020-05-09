@@ -13,39 +13,6 @@ overflow-x: hidden;
 	width: auto;
 }
 
-.linha_branca{
-	background-color: white;
-}
-
-.rotulos{
-	display: inline-block;
-	width: 100px;
-	padding: 5px;
-	margin: 5px 0 5px 0;
-}
-
-
-.botao_enviar{
-	width: 150px;
-	height: 25px;
-	background-color: black;
-	color: white;
-	padding: 0;
-	margin-top: 10px;
-}
-.coluna{
-	width: 50%;
-	float: left;
-}
-
-.coluna > input{
-	width: 45%;
-}
-
-.coluna > input[type="radio"]{
-	width: 0%;
-}
-
 .fa{
 	padding: 10px;
 	font-size: 1.2em;

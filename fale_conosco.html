@@ -3,38 +3,69 @@
 <head>
 	<title>Fale Conosco</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<header>
-		<h1 id="topo">Fale Conosco</h1>
-	</header>
-	<div class="container">
-		<nav class="menu">
-			<h2>Links para os jogos</h2>
-			<ul>
-				<li><a href="jogo1.html"> PES 2020</a></li>
-				<li><a href="jogo1.html"> PES 2020</a></li>
-				<li><a href="jogo1.html"> PES 2020</a></li>
-			</ul>
-		</nav>
-		<content>
-			<div class="conteudo">
-				<form method="POST" action="#">
-					<div id="form_fale_conosco">
-						<label class="rotulos" for="nome"> Nome:</label>
-						<input type="text" name="nome"></br>
-						<label class="rotulos" for="sobrenome"> Sobrenome:</label>
-						<input type="text" name="sobrenome"></br>
-						<label class="rotulos" for="email">Email</label>
-						<input type="email" name="email" id="email" placeholder="seuemail@eamil.com"></br>
-						<label  class="rotulos" for="msg">Mensagem</label>
-						<textarea name="msg" id="msg"></textarea></br>
-						<button class="botao_enviar" type="submit">Enviar</button> 
-					</div>
-				</form>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">MJ</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#minha_nav_bar" aria-controls="minha_nav_bar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="minha_nav_bar">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="preco.html">Preços</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Jogos
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="jogo1.html">Jogo 1</a>
+							<a class="dropdown-item" href="jogo1.html">Jogo 3</a>
+							<a class="dropdown-item" href="jogo1.html">Jogo 3</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="formulario.html">Cadastre-se</a>
+					</li>
+				</ul>
 			</div>
-		</content>
+		</nav>
 	</div>
+
+	<div class="container">
+		<h1>Fale Conosco</h1>
+			<form method="POST" action="#">
+				<div class="form-group">
+					<label for="nome"> Nome:</label>
+					<input class="form-control" type="text" name="nome"></br>
+				</div>
+				<div class="form-group">
+					<label class="rotulos" for="sobrenome"> Sobrenome:</label>
+					<input class="form-control" type="text" name="sobrenome"></br>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input class="form-control" type="email" name="email" id="email" placeholder="seuemail@eamil.com"></br>
+				</div>
+				<div class="form-group">
+					<label  class="rotulos" for="msg">Mensagem</label>
+					<textarea class="form-control" name="msg" id="msg"></textarea></br>
+				</div>
+					<button class="btn btn-primary btn-lg mb-5" type="submit">Enviar</button> 
+			</form>
+	</div>
+
+
 	<footer class="container-fluid text-center text-light bg-dark pt-3 pb-3">
 		<div class="row">
 			<div class="col-sm-4">
@@ -45,12 +76,12 @@
 				<a href="#"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
 				<a href="#"><i class="fa fa-google"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
 				<a href="#"><i class="fa fa-youtube"></i></a>
 			</div>
 			<div class="col-sm-4">
 				<h3>Contato</h3>
-				<h5><i class="fa fa-phone"></i>0800-000-000</h4>
+				<h4><i class="fa fa-phone"></i>0800-000-000</h4>
 			</div>
 		</div>
 	</footer>
