@@ -8,8 +8,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="js/funcoes.js"></script>
 </head>
-<body>
+<body onload="setAtivo()">
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="#">MJ</a>
@@ -18,13 +19,13 @@
 			</button>
 			<div class="collapse navbar-collapse" id="minha_nav_bar">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
+					<li class="nav-item" id="menu_home">
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item" id="menu_preco">
 						<a class="nav-link" href="preco.html">Preços</a>
 					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown" id="menu_jogos">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Jogos
 						</a>
@@ -34,8 +35,11 @@
 							<a class="dropdown-item" href="jogo1.html">Jogo 3</a>
 						</div>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item" id="menu_cadastro">
 						<a class="nav-link" href="formulario.html">Cadastre-se</a>
+					</li>
+					<li class="nav-item" id="menu_contato">
+						<a class="nav-link" href="fale_conosco.html">Contato</a>
 					</li>
 				</ul>
 			</div>
@@ -71,11 +75,11 @@
 			<div class="form-row justify-content-around">
 				<div class="form-group col-md-5">
 					<label for="tel"> Telefone:</label>
-					<input class="form-control" type="tel" name="tel" placeholder="(XX)XXXX-XXXXX">
+					<input class="form-control" type="tel" name="tel" onblur="formatarTel()" placeholder="(XX)XXXX-XXXXX">
 				</div>
 				<div class="form-group col-md-5">
 					<label for="email"> Email:</label>
-					<input class="form-control" type="email" name="sobrenome" placeholder="seuemail@email.com.br">
+					<input class="form-control" type="email" name="sobrenome" placeholder="seuemail@email.com.br" onblur="validarEmail(this)">
 				</div>
 			</div>
 			<div class="form-row justify-content-around">
