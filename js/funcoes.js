@@ -47,7 +47,8 @@ function validarEmail()
 	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
 	{
 		return (true)
+		alert("Formato de Email inválido!");
 	}
-	alert("Formato de Email inválido!");
+	
 	return (false)
 }
